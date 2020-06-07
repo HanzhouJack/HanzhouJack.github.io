@@ -1,65 +1,48 @@
 <html>
 
 <head>
-    <title>多日期选择</title>
+    <title>Python</title>
     <!-- 引入样式 -->
-    <link rel="stylesheet" href="../lib/elementui/theme-chalk/index.css" type="text/css">
+    <link rel="stylesheet" href="lib/elementui/theme-chalk/index.css" type="text/css">
+    <style>
+      .abbox { margin: 20px auto; width: 1100px; overflow: hidden; clear: both }
+      .aboutme { background: #FFF; border-radius: 10px; overflow: hidden; width: 300px;margin: auto;}
+      .ab_title { text-align: center; position: relative; margin: 20px; }
+      .ab_title:before { content: ""; width: 25%; height: 2px; background: #000; position: absolute; left: 0; bottom: 8px }
+      .ab_title:after { content: ""; width: 25%; height: 2px; background: #000; position: absolute; right: 0; bottom: 8px }
+      .ab_con { line-height: 30px; padding: 10px; }
+      .ab_con p { background: #f6f6f6; margin: 5px 0; padding-left: 10px; border-radius: 5px; text-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px; }
+      .avatar { width: 100px; height: 100px; overflow: hidden; border-radius: 50px; margin: auto; }
+      .avatar img { width: 100px; height: 100px }
+    </style>
 </head>
 <body>
 <div id="app">
-  <p style="color: red;">时间控件年月，有默认值，设置时间控件不可输入</p>
-    <span>月</span>
-    <el-date-picker
-      v-model="monthValue"
-      type="month"
-      :editable = "false"
-      placeholder="选择月">
-    </el-date-picker>
-
-<p style="color: red;">时间控件选择多个日期，有默认值，设置时间控件不可输入</p>
-    <p></p>
-    <span class="demonstration">多个日期</span>
-    <el-date-picker
-      ref="datesRef"
-      type="dates"
-      v-model="dateArr"
-      :editable = "false"
-      format="yyyy-MM-dd"
-      value-format="yyyy-MM-dd"
-      placeholder="选择一个或多个日期">
-    </el-date-picker>
-
-    <el-button type="primary" @click="clickBtn" class="btn">打印选择的时间</el-button>
-
-    <div style="margin-top: 20px">
-      <span>打印区</span>
-      <el-input type="textarea" v-model="printStr"></el-input>
-    </div>
-</div>
+  <div class="Python">
+  <p><strong>Python安装教程</strong></p>
+  <p>安装python（注意，这部分很重要）</p>
+  <p>1.双击python.exe并安装</p>
+  <p>2.点击下面的&ldquo;Add python to PATH&quot;--&gt;Next</p>
+  <p>3.&rdquo;Browes&ldquo;选择一个安装python的路径（一定是自己方便找的路径）</p>
+  <p>4.Install--&gt;稍等片刻--&gt;安装完成</p>
+<p>&nbsp;</p>
+  <p>安装pycharm或VS code</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p></p>
+  </div>
 <!-- 引入组件库 -->
-<script type="text/javascript" src="../lib/vue.js"></script>
-<script type="text/javascript" src="../lib/elementui/index.js"></script>
+<script type="text/javascript" src="lib/vue.js"></script>
+<script type="text/javascript" src="lib/elementui/index.js"></script>
 
 <script type="text/javascript">
     new Vue({
         el: "#app",
         data: {
-            monthValue : "2018-06",
-            dateArr: [],
-            printStr: ""
+
         },
         methods: {
-            clickBtn: function () {
-                this.printStr = this.dateArr ? this.dateArr.join() : "";
-            }
-        },
-        mounted: function(){
-          //为了解决bug，所以默认值放在了这里
-          this.$nextTick(function(){
-            this.dateArr = ["2018-08-03","2018-08-06"];
-            this.$refs.datesRef.showPicker();
-            this.$refs.datesRef.hidePicker();
-          });
+
         }
     });
 </script>
