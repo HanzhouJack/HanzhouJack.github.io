@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+create 2018-07-20 by yule
+# vue-element-test
+## 持续更新中。。。
+这是vue + element ui的第一个项目，基于CDN。为了方便预览，暂时不依赖各种服务器，只是静态 HTML
 
-You can use the [editor on GitHub](https://github.com/HanzhouJack/My-personal-blog/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+这里将记录工作中遇到的问题或者 element ui 官网上没有的 demo
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+预览地址：https://yulegh.github.io/vue-element-test/index.html
 
-### Markdown
+博客地址：http://www.cnblogs.com/yuxiaole/
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+喜欢就 star
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/HanzhouJack/My-personal-blog/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+附：element ui 文件下载地址<br>
+  https://unpkg.com/element-ui@2.4.7/lib/theme-chalk/index.css<br>
+  https://unpkg.com/element-ui@2.4.7/lib/theme-chalk/fonts/element-icons.woff<br>
+  https://unpkg.com/element-ui@2.4.7/lib/theme-chalk/fonts/element-icons.ttf<br>
+  https://unpkg.com/element-ui@2.4.7/lib/index.js<br>
